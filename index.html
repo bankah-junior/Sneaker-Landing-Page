@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLAB-Toes</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <main>
+        <nav class="fixed w-full text-base flex justify-between md:items-center p-4">
+            <h1 class="brand font-bold text-2xl md:ml-8">
+                <a href="#">OLAB-Toes</a>
+            </h1>
+            <span class="open-menu md:hidden text-3xl cursor-pointer" id="openMenu">&#9776;</span>
+            <ul class="menu md:flex flex-col md:flex-row rounded-lg hidden" id="menu">
+                <span class="close-menu text-3xl w-full flex justify-end pr-4 md:hidden cursor-pointer" id="closeMenu">&times;</span>
+                <li class="md:mx-12 pb-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">MEN</a>
+                </li>
+                <li class="md:mr-12 py-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">WOMEN</a>
+                </li>
+                <li class="md:mr-12 py-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">CHILDREN</a>
+                </li>
+                <li class="md:mr-12 py-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">SALE</a>
+                </li>
+            </ul>
+            <select class="md:mr-8 h-full cursor-pointer" name="language" id="lan">
+                <option value="English">English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="French">French</option>
+                <option value="Spanish">Spanish</option>
+            </select>
+        </nav>
+        <!-- Content -->
+        <div class="content flex flex-col md:flex-row md:h-screen">
+            <div class="sc-1 md:w-100-30 md:h-full h-100-30 w-full flex justify-center items-center pt-12 md:pt-0 pb-4" id="sc1">
+                <span class="sn1 absolute font-bold text-white md:text-12xl" id="sn1">JORDAN</span>
+                <img src="./img/s1.gif" alt="sneaker" class="s-1 index  md:w-full cursor-pointer md:opacity-100" id="s1">
+            </div>
+            <div class="sc-2 md:w-100-85 md:h-full h-100-85 w-full flex justify-center items-center" id="sc2">
+                <span class="sn2 absolute font-bold text-white md:text-5xl" id="sn2">REEBOK</span>
+                <img src="./img/s2.gif" alt="sneaker" class="s-2 index md:w-full cursor-pointer md:opacity-100" id="s2">
+            </div>
+            <div class="sc-3 md:w-100-85 md:h-full h-100-85 w-full flex justify-center items-center py-4" id="sc3">
+                <span class="sn3 absolute font-bold text-black md:text-5xl" id="sn3">AIR270</span>
+                <img src="./img/s3.gif" alt="sneaker" class="s-3 index md:w-full cursor-pointer md:opacity-100" id="s3">
+            </div>
+        </div>
+        <!-- End of Content -->
+    </main>
+    
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
